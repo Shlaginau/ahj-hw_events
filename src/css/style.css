@@ -1,0 +1,29 @@
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  width: 440px;
+  margin: 0 auto;
+}
+
+.cell {
+  background-color: #484848;
+  box-sizing: border-box;
+  width: calc(25% - 5px);
+  height: 100px;
+  border: 2px solid #999;
+}
+
+.goblin {
+  background-image: url(../img/goblin.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.cursor-play {
+  cursor: url(../img/hammer.png) 16 16, auto;
+}
+
+.cursor-click {
+  cursor: url(../img/hammerClick.png) 16 16, auto;
+}
