@@ -22,7 +22,7 @@ export default class Game {
   playGoblin() {
     if (this.gameOver) return;
 
-    if (this.currentCell) {
+    if (this.currentCell && this.currentCell.contains(this.goblin)) {
       this.currentCell.classList.remove('goblin');
     }
 
